@@ -27,7 +27,7 @@ function App() {
         <h1 className="mb-30">Все кейсы</h1>
         <div className="d-flex">
           <div className="card">
-            <img width={150} height={168} src="/img/cases/1.jpg" alt=""></img>
+            <img width={150} height={168} src="/img/cases/1.jpg" alt="Фотография чехла"></img>
             <p>Чехол Сейлор Мун AirPods 1/2</p>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
@@ -40,7 +40,7 @@ function App() {
             </div>
           </div>
           <div className="card">
-            <img width={150} height={168} src="/img/cases/2.jpg" alt=""></img>
+            <img width={150} height={168} src="/img/cases/2.jpg" alt="Фотография чехла"></img>
             <p>Чехол Сейлор Мун AirPods 1/2</p>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
@@ -53,7 +53,7 @@ function App() {
             </div>
           </div>
           <div className="card">
-            <img width={150} height={168} src="/img/cases/3.jpg" alt=""></img>
+            <img width={150} height={168} src="/img/cases/3.jpg" alt="Фотография чехла"></img>
             <p>Чехол Сейлор Мун AirPods 1/2</p>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
@@ -66,7 +66,7 @@ function App() {
             </div>
           </div>
           <div className="card">
-            <img width={150} height={168} src="/img/cases/4.jpg" alt=""></img>
+            <img width={150} height={168} src="/img/cases/4.jpg" alt="Фотография чехла"></img>
             <p>Чехол Сейлор Мун AirPods 1/2</p>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
