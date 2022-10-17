@@ -1,28 +1,27 @@
-function Drawer() {
+function Drawer({ onClick, items = [] }) {
+
+    // Чтобы хранить в пропсах по умолчанию, то надо дестрктуризировать и туда запихивать че захоттим
     return (
-        <div style={{ display: 'none' }} className="overlay">
+
+        <div className="overlay">
+
             <div className="drawer">
-                <h2>Корзина <img className="delete" src="/img/delete.svg" alt="delete"></img></h2>
-
+                <h2>Корзина <img className="delete" src="/img/delete.svg" alt="delete" onClick={onClick}></img></h2>
                 <div className="items">
-                    <div className="CartItem d-flex align-center mb-20">
-                        <img className="mr-20" width={80} height={90} src="/img/cases/3.jpg" alt=""></img>
-                        <div>
-                            <p className="mb-5">Appa AirPods 1/2</p>
-                            <b>700 ₽</b>
+                    {items.map((obj) => (
+                        <div className="CartItem d-flex align-center mb-20">
+                            <img className="mr-20" width={80} height={90} src={obj.imageURL} alt=""></img>
+                            <div>
+                                <p className="mb-5">{obj.title}</p>
+                                <b>{obj.price}₽</b>
+                            </div>
+                            <img className="delete" src="/img/delete.svg" alt="delete"></img>
                         </div>
-                        <img className="delete" src="/img/delete.svg" alt="delete"></img>
-                    </div>
 
-                    <div className="CartItem d-flex align-center mb-20">
-                        <img className="mr-20" width={80} height={90} src="/img/cases/3.jpg" alt=""></img>
-                        <div>
-                            <p className="mb-5">Appa AirPods 1/2</p>
-                            <b>700 ₽</b>
-                        </div>
-                        <img className="delete" src="/img/delete.svg" alt="delete"></img>
-                    </div>
+                    ))}
                 </div>
+
+
 
                 <div className="cartTotalBlock">
                     <ul>

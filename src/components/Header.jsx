@@ -1,4 +1,4 @@
-function Header() {
+function Header(props) {
     return (
         <header className="d-flex justify-between align-center p-30">
             <div className="headerLeft d-flex align-center">
@@ -13,7 +13,7 @@ function Header() {
                 </div>
             </div>
             <div className="headerRight d-flex">
-                <div className="basket mr-30 d-flex align-center">
+                <div className="basket mr-30 d-flex align-center cu-p" onClick={props.onClickBasket}>
                     <img className="mr-5" width={25} height={25} src="/img/basket.svg" alt="basket" />
                     <span >1205 ₽</span>
                 </div>
